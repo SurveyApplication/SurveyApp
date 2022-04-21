@@ -1,0 +1,102 @@
+/* CSS Reset */
+body, header, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+.survey {
+  background-color: #f1f1f1;
+  width: 280px;
+  height: 70px;
+}
+
+.surveyControls {
+  font-size: 12pt;
+  font-weight: 500;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.surveyCode {
+  font-size: 14pt;
+  font-weight: 550;
+}
+
+.buttonIcon {
+  height: 25px;
+  width: 25px; 
+  display: inline-block;
+}
+
+.largeButtonIcon {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+input[type=text], input[type=password] {
+  border: 1px solid #000000;
+  width: 90%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px; 
+}
+
+.login button {
+  width: 100%;
+  background-color: #000000;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+}
+
+.login button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding: 15px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns:auto auto;	
+}
+
+.button {
+  background-color: #FF0000;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=number] {
+  border: 1px solid #000000;
+  width: 90%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px; 
+}
+
+.attribution {
+  font-size: 8pt;
+}
