@@ -921,7 +921,7 @@ function invalidCodeAttempt() {
 
 // run server
 const server = http.createServer(app);
-server.listen(80);
+server.listen(443);
 console.log('running server');
 
 // continue surveys
