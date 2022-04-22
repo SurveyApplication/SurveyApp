@@ -12,6 +12,7 @@ const nodemailer = require('nodemailer');
 const { SEND_MAIL_CONFIG } = require('./config');
 const transporter = nodemailer.createTransport(SEND_MAIL_CONFIG);
 
+
 let activeUser = null;
 
 // TEMPORARY
@@ -20,6 +21,7 @@ let username = 'admin';
 let password = 'password';
 // ---------
 
+app.enable('trust proxy');
 app.use(express.static(__dirname + '/public')); // make public directory accessible to client
 app.use(bodyParser.urlencoded({ extended: true })); // use body parser
 app.set('view engine', 'ejs');
