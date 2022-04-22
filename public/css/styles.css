@@ -1,0 +1,145 @@
+* {
+  padding: auto;
+  margin-bottom: auto;
+}
+
+form {
+  border: 5px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.survey {
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 70px;
+}
+
+.unpublishedSurveyGrid {
+  display: grid;
+  grid-template-columns: [code] 15% [name] 45% [buttons] 40%;
+  grid-template-areas: "code name buttons";
+  align-items: center;
+  padding-left: 5px;
+}
+
+.publishedSurveyGrid {
+  display: grid;
+  grid-template-columns: 15% 45% 40%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "code name buttons"
+    "bar bar buttons";
+  align-items: center;
+  padding-left: 5px;
+}
+
+.publishedSurvey {
+  align-items: center;
+}
+
+.surveyCode {
+  grid-area: code;
+  font-size: 12pt;
+  font-weight: 550;
+}
+
+.surveyName {
+  grid-area: name;
+  font-size: 10pt;
+  font-weight: 500;
+}
+
+.surveyButtonContainer {
+  grid-area: buttons;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 3px;
+}
+
+.progressBar {
+  grid-area: bar;
+}
+
+.doneIcon {
+  padding-left: 10px;
+  height: 15px;
+  width: 15px; 
+  display: inline-block;
+}
+
+.buttonIcon {
+  height: 25px;
+  width: 25px; 
+  display: inline-block;
+}
+
+.buttonIcon:hover {
+  opacity: 0.7;
+}
+
+.largeButtonIcon {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.largeButtonIcon:hover {
+  opacity: 0.7;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 10px; 
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email] {
+  border: 1px solid #000000;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 15px;
+}
+
+.container {
+  padding: 15px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns:auto auto;	
+}
+
+.attribution {
+  font-size: 8pt;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile10 {
+	  width: 300px; font-size: 10pt;
+	}
+.mobile10 h1{
+	width: 300px; font-size: 12pt;
+	}
+.mobile10 h3{
+	width: 300px; font-size: 8pt;
+	}
+}
